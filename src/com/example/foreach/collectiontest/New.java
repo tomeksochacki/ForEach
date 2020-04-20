@@ -35,11 +35,26 @@ public class New {
         System.out.println("Set numberSet contains variable number 2? " + numberSet.contains(2));
         System.out.println("Set numberSet contains variable number 8? " + numberSet.contains(8));
 
+
         for (Integer numberSetS: numberSet) {
             System.out.println("Variables number in set are: " + numberSetS);
         }
+        System.out.println();
+        numberSet.add(4);
         for (Integer numberSetS: numberSet) {
             System.out.println("Variables number in set are: " + numberSetS);
+        }
+        Set<Integer> numbersSet2 = new HashSet<>();
+        numbersSet2.add(1);
+        numbersSet2.add(2);
+        numbersSet2.add(3);
+        numbersSet2.add(4);
+        numbersSet2.add(5);
+
+        numbersSet2.removeAll(numberSet);
+        System.out.println("size is: " + numbersSet2.size());
+        for (Integer numberSetS: numbersSet2) {
+            System.out.println("Variables number in set are: " + numbersSet2);
         }
 
     }
